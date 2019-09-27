@@ -16,7 +16,7 @@ end
 def get_japanese_emoticon(file, emoticon)
   library = load_library(file)
   
-  library[:get_emoticon][emoticon].fetch("")
+  library[:get_emoticon].fetch(emoticon, "Sorry, I don't know that one.")
   
   
 
